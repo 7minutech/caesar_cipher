@@ -33,3 +33,10 @@ describe "#char_is_valid?" do
     expect(char_is_valid?(65, 5)).to be true
   end
 end
+
+describe "caesar_cipher" do
+  it "returns the sentence shifted by the shift" do
+    expect(caesar_cipher("Hello World!", 3)).to eql("Khoor Zruog!")
+    expect(caesar_cipher("How are you?", 1)).to eql("Ipx bsf zpv?")
+  end
+end
