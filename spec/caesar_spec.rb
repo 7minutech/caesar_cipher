@@ -1,4 +1,4 @@
-require "/home/trophic/repos/caesar_cipher/spec/caesar_spec"
+require_relative "lib/caesar"
 p shift_char("a", 2)
 describe "shift_char" do
   it "returns shifted char" do

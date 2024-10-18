@@ -55,5 +55,3 @@ def caesar_cipher(word, shift)
   end
   cipher.join
 end
-
-p caesar_cipher("What a string!", 5)
