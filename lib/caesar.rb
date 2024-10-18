@@ -17,12 +17,12 @@ def get_shift_num(char, shift)
 end
 
 def char_is_valid?(char_num, shift)
-  char_num + shift < if upper?(char_num.chr)
-                       # over Z
-                       LAST_UPPER_CHAR
-                     else
-                       LAST_LOWER_CHAR
-                     end
+  char_num + shift <= if upper?(char_num.chr)
+                        # over Z
+                        LAST_UPPER_CHAR
+                      else
+                        LAST_LOWER_CHAR
+                      end
 end
 
 def get_valid_char(char, shift)
